@@ -1,6 +1,10 @@
+{% load staticfiles %}
 <html>
     <head>
         <title>EvgeniyEV</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/TODO_List.css' %}">
     </head>
     <body>
         <div>
@@ -8,21 +12,21 @@
         </div>
 
         <div>
-            <p>published: 26.02.18, 03.36</p>
             <h2><a href="">Задание1</a></h2>
+            <p>published: 26.02.18, 03.36</p>
             <p><input type="checkbox" name="a" value="done">Узнать, что существует задание</p>
 
         </div>
 
         <div>
-            <p>published: 26.02.18, 03.37</p>
-            <h2><a href="">My second task</a></h2>
+            <h2><a href="">Задание2</a></h2>
+             <p>published: 26.02.18, 03.37</p>
             <p><input type="checkbox" name="a" value="done">Настроить часы в ubuntu</p>
         </div>
 
         <div>
-            <p>published: 26.02.18, 12.39</p>
-            <h2><a href="">My third task</a></h2>
+            <h2><a href="">Задание3</a></h2>
+            <p>published: 26.02.18, 00.39</p>
             <p><input type="checkbox" name="a" value="done">Найти хороший гайд на джанго, сделать задание</p>
         </div>
     </body>
