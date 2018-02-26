@@ -9,7 +9,7 @@ services:
   database:
     build:
       context: DB
-      dockerfile: Dockerfile
+      dockerfile: DB/Dockerfile
     depends_on:
       - rabbitmq
     networks:
@@ -18,8 +18,8 @@ services:
       - "lockalhost:lockahost"
   listener:
     build:
-      context: ./Server
-      dockerfile: Dockerfile
+      context: Server
+      dockerfile: Server/Dockerfile
     depends_on:
       - rabbitmq
       - database
