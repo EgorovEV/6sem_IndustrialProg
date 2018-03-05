@@ -1,0 +1,31 @@
+{% load staticfiles %}
+<html>
+    <head>
+        <title>EvgeniyEV</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/TODO_List.css' %}">
+
+    </head>
+<body>
+    <div class="container">
+      <p>
+          <label for="new-task"><h3>Add Item</h3></label><input id="new-task" type="text"><button>Add</button>
+      </p>
+
+      <h3>Todo</h3>
+      <ul id="incomplete-tasks">
+        <li><input type="checkbox"><label>do "to-do" list </label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+
+        <li><input type="checkbox"><label>try to do something</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li><
+        <li><input type="checkbox"><label>to do: tick "do-to" after do to-do task</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+      </ul>
+
+      <h3>Completed</h3>
+      <ul id="completed-tasks">
+      </ul>
+
+    </div>
+    <script src="{% static 'app.js' %}"></script>
+
+  </body>
